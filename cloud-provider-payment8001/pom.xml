@@ -13,10 +13,23 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 引入自己定义的api通用包 -->
+        <dependency>
+            <groupId>com.zj.springcloud</groupId>
+            <artifactId>cloud-api-commons</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
@@ -48,14 +61,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
-        <!--        <dependency>-->
-        <!--            <groupId>org.springframework.boot</groupId>-->
-        <!--            <artifactId>spring-boot-devtools</artifactId>-->
-        <!--            <scope>runtime</scope>-->
-        <!--            <optional>true</optional>-->
-        <!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
